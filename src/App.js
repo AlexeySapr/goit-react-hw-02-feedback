@@ -1,13 +1,17 @@
 import './App.css';
 import Container from './components/container/Container';
-import Header from './components/header/Header';
+import FeedbackOptions from './components/feedbackOptions/FeedbackOptions';
+import Section from './components/section/Section';
 
 function App() {
   return (
     <div className="App">
       <h1 className="AppHeader">Reviews widget</h1>
       <Container>
-        <Header />
+        <Section title={'Please leave feedback'}>
+          <FeedbackOptions />
+        </Section>
+        <Section title={'Statistics'}></Section>
       </Container>
     </div>
   );
