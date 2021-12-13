@@ -15,25 +15,19 @@ class App extends React.Component {
 
   addFeedback = event => {
     if (event.target.dataset.good) {
-      this.setState(prevState => {
-        return {
-          good: prevState.good + 1,
-        };
-      });
+      this.setState(prevState => ({
+        good: prevState.good + 1,
+      }));
     }
     if (event.target.dataset.neutral) {
-      this.setState(prevState => {
-        return {
-          neutral: prevState.neutral + 1,
-        };
-      });
+      this.setState(prevState => ({
+        neutral: prevState.neutral + 1,
+      }));
     }
     if (event.target.dataset.bad) {
-      this.setState(prevState => {
-        return {
-          bad: prevState.bad + 1,
-        };
-      });
+      this.setState(prevState => ({
+        bad: prevState.bad + 1,
+      }));
     }
   };
 
