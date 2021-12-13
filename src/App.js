@@ -14,21 +14,10 @@ class App extends React.Component {
   };
 
   addFeedback = event => {
-    if (event.target.dataset.good) {
-      this.setState(prevState => ({
-        good: prevState.good + 1,
-      }));
-    }
-    if (event.target.dataset.neutral) {
-      this.setState(prevState => ({
-        neutral: prevState.neutral + 1,
-      }));
-    }
-    if (event.target.dataset.bad) {
-      this.setState(prevState => ({
-        bad: prevState.bad + 1,
-      }));
-    }
+    const targetName = event.currentTarget.name;
+    this.setState(prevState => ({
+      [targetName]: prevState[targetName] + 1,
+    }));
   };
 
   countTotalFeedback = () => {
