@@ -40,7 +40,10 @@ class App extends React.Component {
         <h1 className="AppHeader">Reviews widget</h1>
         <Container>
           <Section title={'Please leave feedback'}>
-            <FeedbackOptions onLeaveFeedback={this.addFeedback} />
+            <FeedbackOptions
+              options={['good', 'neutral', 'bad']}
+              onLeaveFeedback={this.addFeedback}
+            />
           </Section>
           <Section title={'Statistics'}>
             {total > 0 ? (

@@ -17,13 +17,6 @@ button:focus {
   background-color: teal;
 }
 
-.feedbackGood,
-.feedbackNeutral {
+.feedbackBtn:not(:last-child) {
   margin-right: 20px;
-}
-
-.feedbackNeutral {
-}
-
-.feedbackBad {
 }
