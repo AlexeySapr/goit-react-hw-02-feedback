@@ -52,7 +52,7 @@ class App extends React.Component {
                 neutral={neutral}
                 bad={bad}
                 total={total}
-                positivePercentage={positiveFeedbackPercentage || '0'}
+                positivePercentage={positiveFeedbackPercentage}
               />
             ) : (
               <Notification message="There is no feedback" />
